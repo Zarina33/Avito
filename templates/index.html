@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head><title>Avibe + Avision</title></head>
+  <body>
+    <h1>Avibe (текст)</h1>
+    <form method="post" action="/avibe">
+      <textarea name="prompt" rows="4" cols="50">Привет, подскажи рецепт борща</textarea><br>
+      <button type="submit">Отправить</button>
+    </form>
+    <hr>
+    <h1>Avision (изображение + анализ)</h1>
+    <form method="post" action="/avision" enctype="multipart/form-data">
+      <input type="file" name="image" accept="image/*"><br>
+      <input type="text" name="prompt2" value="Опиши изображение подробно и скажи, что здесь можно продать"><br>
+      <button type="submit">Анализировать</button>
+    </form>
+  </body>
+</html>
