@@ -8,7 +8,7 @@ warnings.filterwarnings("ignore", category=UserWarning)
 
 # Устанавливаем свои директории для кеша
 # Например:
-root_cache_dir = "/mnt/data/avito/vision"
+root_cache_dir = "/home/zarina/Work/BakaiMarket/Avito/vision"
 models_cache_dir = os.path.join(root_cache_dir, "models")
 hub_cache_dir = os.path.join(root_cache_dir, "hub")
 datasets_cache_dir = os.path.join(root_cache_dir, "datasets")
@@ -28,7 +28,7 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 print(f"✅ Модель будет работать на устройстве: {device}")
 
 # Путь к изображению
-local_image_path = "/mnt/data/avito/car5.jpeg"
+local_image_path = "/home/zarina/Work/BakaiMarket/Avito/car5.jpeg"
 
 # --- Загрузка модели и процессора (с указанием cache_dir) ---
 print(f"\n⬇️ Скачивание и загрузка модели {model_id} в {models_cache_dir} ...")

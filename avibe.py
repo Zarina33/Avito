@@ -4,7 +4,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 # —————————————————————————————————————
 # Указываем свои директории для кешей / хранения
-root_cache_dir = "/mnt/data/avito/vibe"        # корневая папка кешей
+root_cache_dir = "/home/zarina/Work/BakaiMarket/Avito/vibe"        # корневая папка кешей
 models_cache_dir = os.path.join(root_cache_dir, "models")     # для моделей
 tokenizer_cache_dir = os.path.join(root_cache_dir, "tokenizers")  # для токенизаторов
 os.makedirs(models_cache_dir, exist_ok=True)
